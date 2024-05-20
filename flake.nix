@@ -9,6 +9,7 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs }:
   let
+    imports = [ <home-manager/nix-darwin> ];
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
@@ -84,6 +85,11 @@
       # Enable building of linux bins
       nix.settings.extra-trusted-users = ["@admin"];
       nix.linux-builder.enable = true;
+
+      users.users.malanius = {
+	name = "malanius";
+	home = "/Users/malanius";
+      };
     };
   in
   {
