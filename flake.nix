@@ -21,6 +21,11 @@
 	  pkgs.git
         ];
 
+      fonts.fontDir.enable = true;
+      fonts.fonts = [
+        pkgs.nerdfonts
+      ];
+
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
