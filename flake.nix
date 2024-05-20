@@ -20,6 +20,10 @@
       environment.systemPackages =
         [ pkgs.vim
 	  pkgs.git
+	  pkgs.gitflow
+	  pkgs.git-lfs
+	  pkgs.gitkraken
+	  pkgs.git-cliff
         ];
 
       fonts.fontDir.enable = true;
