@@ -24,6 +24,9 @@
 	  pkgs.git-lfs
 	  pkgs.gitkraken
 	  pkgs.git-cliff
+	  pkgs.alacritty
+    pkgs.starship
+    pkgs.powerline
         ];
 
       fonts.fontDir.enable = true;
