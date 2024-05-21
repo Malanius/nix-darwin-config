@@ -29,6 +29,7 @@
 	  pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
     pkgs.starship
     pkgs.powerline
+    pkgs.rustup
         ];
 
       fonts.fontDir.enable = true;
@@ -39,6 +40,15 @@
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
+      services.skhd = {
+      	enable = true;
+      };
+      serices.spacebar = {
+	enable = true;
+      };
+      services.yabai = {
+	enable = true;
+      };
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
