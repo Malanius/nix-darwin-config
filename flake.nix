@@ -28,7 +28,7 @@
     pkgs.neovim
 	  pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
     pkgs.starship
-    pkgs.powerline
+          pkgs.vscode
     pkgs.rustup
         ];
 
