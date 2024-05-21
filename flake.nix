@@ -30,6 +30,7 @@
     pkgs.starship
           pkgs.vscode
           pkgs.raycast
+          pkgs.nixfmt-classic
         ];
 
       fonts.fontDir.enable = true;
