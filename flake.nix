@@ -16,21 +16,22 @@
 
         nixpkgs.config = { allowUnfree = true; };
         environment.systemPackages = [
-          pkgs.vim
-          pkgs.git
-          pkgs.gitflow
-          pkgs.git-lfs
-          pkgs.gitkraken
-          pkgs.git-cliff
           pkgs.alacritty
-          pkgs.neovim
+          pkgs.git
+          pkgs.git-cliff
+          pkgs.git-lfs
+          pkgs.gitflow
+          pkgs.gitkraken
           pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
-          pkgs.starship
-          pkgs.powerline
-          pkgs.rustup
-          pkgs.vscode
-          pkgs.raycast
+          pkgs.neovim
           pkgs.nixfmt-classic
+          pkgs.powerline
+          pkgs.raycast
+          pkgs.rustup
+          pkgs.starship
+          pkgs.vim
+          pkgs.vscode
+          pkgs.spotify
         ];
 
         fonts.fontDir.enable = true;
