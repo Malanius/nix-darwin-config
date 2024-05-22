@@ -37,6 +37,7 @@
           pkgs.nixfmt-classic
           pkgs.nodePackages_latest.pnpm
           pkgs.pkg-config
+          pkgs.poetry
           pkgs.powerline
           pkgs.raycast
           pkgs.rustup
