@@ -34,6 +34,7 @@
           pkgs.starship
           pkgs.vim
           pkgs.vscode
+          pkgs.wakatime
         ];
 
         homebrew.enable = true;
