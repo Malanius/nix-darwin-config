@@ -35,6 +35,12 @@
         ];
 
         homebrew.enable = true;
+        homebrew.taps = [
+          "derailed/k9s"
+        ];
+        homebrew.brews = [
+          "derailed/k9s/k9s"
+        ];
 
         fonts.fontDir.enable = true;
         fonts.fonts = [ pkgs.nerdfonts ];
