@@ -16,6 +16,8 @@
 
         nixpkgs.config = { allowUnfree = true; };
         environment.systemPackages = [
+          pkgs._1password
+          # pkgs._1password-gui # complains it is not installed in Applications :(
           pkgs.alacritty
           pkgs.btop
           pkgs.git
