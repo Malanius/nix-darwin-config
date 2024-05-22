@@ -1,8 +1,8 @@
 bandwhich
 broot
-cargo-generate
+cargo-generate --features vendored-openssl
 cargo-pio
-cargo-update
+cargo-update --features vendored-openssl
 dioxus-cli
 du-dust
 dua-cli
