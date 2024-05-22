@@ -20,6 +20,7 @@
           # pkgs._1password-gui # complains it is not installed in Applications :(
           pkgs.alacritty
           pkgs.argocd
+          pkgs.awscli2
           pkgs.btop
           pkgs.bun
           pkgs.git
