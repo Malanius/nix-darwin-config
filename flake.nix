@@ -16,22 +16,23 @@
 
         nixpkgs.config = { allowUnfree = true; };
         environment.systemPackages = [
-          pkgs._1password
           # pkgs._1password-gui # complains it is not installed in Applications :(
+          pkgs._1password
           pkgs.alacritty
           pkgs.argocd
           pkgs.awscli2
           pkgs.btop
           pkgs.bun
+          pkgs.fzf
           pkgs.git
           pkgs.git-cliff
           pkgs.git-lfs
           pkgs.gitflow
           pkgs.gitkraken
-          pkgs.fzf
           pkgs.go
           pkgs.krew
           pkgs.kubernetes-helm
+          pkgs.localstack
           pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
           pkgs.neovim
           pkgs.nixfmt-classic
