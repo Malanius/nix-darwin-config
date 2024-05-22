@@ -17,6 +17,7 @@
         nixpkgs.config = { allowUnfree = true; };
         environment.systemPackages = [
           pkgs.alacritty
+          pkgs.btop
           pkgs.git
           pkgs.git-cliff
           pkgs.git-lfs
