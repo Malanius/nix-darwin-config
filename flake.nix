@@ -34,6 +34,8 @@
           pkgs.spotify
         ];
 
+        homebrew.enable = true;
+
         fonts.fontDir.enable = true;
         fonts.fonts = [ pkgs.nerdfonts ];
 
