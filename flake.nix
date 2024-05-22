@@ -51,12 +51,8 @@
         ];
 
         homebrew.enable = true;
-        homebrew.taps = [
-          "derailed/k9s"
-        ];
-        homebrew.brews = [
-          "derailed/k9s/k9s"
-        ];
+        homebrew.taps = [ "derailed/k9s" ];
+        homebrew.brews = [ "derailed/k9s/k9s" ];
 
         fonts.fontDir.enable = true;
         fonts.fonts = [ pkgs.nerdfonts ];
@@ -130,6 +126,18 @@
         users.users.malanius = {
           name = "malanius";
           home = "/Users/malanius";
+        };
+
+        environment.shellAliases = {
+          rm = "rm -v";
+          mv = "mv -v";
+          cp = "xcp -v";
+          ls = "eza";
+          ll = "ls -alF";
+          la = "ls -A";
+          l = "ls -CF";
+          lll = "ls -alF | less";
+          llh = "ls -alFh";
         };
       };
     in {
