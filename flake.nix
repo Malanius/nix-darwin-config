@@ -19,12 +19,15 @@
           pkgs._1password
           # pkgs._1password-gui # complains it is not installed in Applications :(
           pkgs.alacritty
+          pkgs.argocd
           pkgs.btop
           pkgs.git
           pkgs.git-cliff
           pkgs.git-lfs
           pkgs.gitflow
           pkgs.gitkraken
+          pkgs.krew
+          pkgs.kubernetes-helm
           pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
           pkgs.neovim
           pkgs.nixfmt-classic
