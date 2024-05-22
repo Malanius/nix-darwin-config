@@ -32,6 +32,7 @@
           pkgs.rustup
           pkgs.spotify
           pkgs.starship
+          pkgs.thefuck
           pkgs.vim
           pkgs.vscode
           pkgs.wakatime
