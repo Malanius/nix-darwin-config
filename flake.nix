@@ -28,6 +28,7 @@
           pkgs.git-lfs
           pkgs.gitflow
           pkgs.gitkraken
+          pkgs.fzf
           pkgs.go
           pkgs.krew
           pkgs.kubernetes-helm
