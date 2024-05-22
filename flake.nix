@@ -21,6 +21,7 @@
           pkgs.alacritty
           pkgs.argocd
           pkgs.btop
+          pkgs.bun
           pkgs.git
           pkgs.git-cliff
           pkgs.git-lfs
@@ -31,6 +32,7 @@
           pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
           pkgs.neovim
           pkgs.nixfmt-classic
+          pkgs.nodePackages_latest.pnpm
           pkgs.pkg-config
           pkgs.powerline
           pkgs.raycast
@@ -41,6 +43,7 @@
           pkgs.vim
           pkgs.vscode
           pkgs.wakatime
+          pkgs.yarn
         ];
 
         homebrew.enable = true;
