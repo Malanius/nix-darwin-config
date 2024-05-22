@@ -26,13 +26,14 @@
           pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
           pkgs.neovim
           pkgs.nixfmt-classic
+          pkgs.pkg-config
           pkgs.powerline
           pkgs.raycast
           pkgs.rustup
+          pkgs.spotify
           pkgs.starship
           pkgs.vim
           pkgs.vscode
-          pkgs.spotify
         ];
 
         homebrew.enable = true;
