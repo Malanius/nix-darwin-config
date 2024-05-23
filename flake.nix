@@ -96,7 +96,7 @@
 
         system.defaults = {
           dock = {
-            autohide = true;
+            autohide = false;
             mru-spaces = false;
             orientation = "left";
           };
