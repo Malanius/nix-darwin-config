@@ -21,6 +21,7 @@
           pkgs.alacritty
           pkgs.argocd
           pkgs.awscli2
+          pkgs.bat
           pkgs.btop
           pkgs.bun
           pkgs.fzf
