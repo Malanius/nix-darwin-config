@@ -40,6 +40,7 @@
           pkgs.neovim
           pkgs.nixfmt-classic
           pkgs.nodePackages_latest.pnpm
+          pkgs.obsidian
           pkgs.openvpn
           pkgs.pkg-config
           pkgs.poetry
@@ -140,7 +141,6 @@
           ls = "eza";
           ll = "ls -alF";
           la = "ls -A";
-          l = "ls -CF";
           lll = "ls -alF | less";
           llh = "ls -alFh";
         };
