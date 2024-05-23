@@ -37,6 +37,7 @@
           pkgs.neovim
           pkgs.nixfmt-classic
           pkgs.nodePackages_latest.pnpm
+          pkgs.openvpn
           pkgs.pkg-config
           pkgs.poetry
           pkgs.powerline
