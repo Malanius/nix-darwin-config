@@ -119,6 +119,10 @@
           trackpad = { Clicking = true; };
         };
         system.startup.chime = false;
+        system.keyboard = {
+          enableKeyMapping = true;
+          nonUS.remapTilde = true;
+        };
 
         # Enable x86 w/ rosseta
         nix.extraOptions = ''
