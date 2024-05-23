@@ -20,7 +20,9 @@
           pkgs._1password
           pkgs.alacritty
           pkgs.argocd
+          pkgs.aws-vault
           pkgs.awscli2
+          pkgs.awslogs
           pkgs.bat
           pkgs.btop
           pkgs.bun
