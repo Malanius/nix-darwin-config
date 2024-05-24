@@ -1,3 +1,5 @@
+# TODO: find how to properly run home-manager to create the utility srcipt above and dotfiles
+# TODO: modularize the config
 {
   description = "Malanius Darwin Flake";
 
@@ -166,6 +168,7 @@
           jf-prod = "~/.scripts/assume_role jf-prod";
           whereami="env | grep AWS_VAULT";
         };
+
       };
     in {
       # Build darwin flake using:
