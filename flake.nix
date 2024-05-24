@@ -57,9 +57,12 @@
           pkgs.yarn
         ];
 
-        homebrew.enable = true;
-        homebrew.taps = [ "derailed/k9s" ];
-        homebrew.brews = [ "derailed/k9s/k9s" ];
+        homebrew = {
+          enable = true;
+          taps = [ "derailed/k9s" ];
+          brews = [ "derailed/k9s/k9s" ];
+          # casks = [ "superproductivity" ]; # doesn't work, SO complains it can't be check for malicious software
+        };
 
         fonts.fontDir.enable = true;
         fonts.fonts = [ pkgs.nerdfonts ];
