@@ -160,6 +160,11 @@
           la = "ls -A";
           lll = "ls -alF | less";
           llh = "ls -alFh";
+          # AWS valut assume
+          jf-dev = "~/.scripts/assume_role jf-dev";
+          jf-stage = "~/.scripts/assume_role jf-stage";
+          jf-prod = "~/.scripts/assume_role jf-prod";
+          whereami="env | grep AWS_VAULT";
         };
       };
     in {
