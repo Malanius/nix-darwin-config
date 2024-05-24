@@ -33,6 +33,7 @@
           pkgs.gitflow
           pkgs.gitkraken
           pkgs.go
+          pkgs.gnupg
           pkgs.krew
           pkgs.kubernetes-helm
           pkgs.localstack
