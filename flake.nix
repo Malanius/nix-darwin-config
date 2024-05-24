@@ -26,6 +26,7 @@
           pkgs.bat
           pkgs.btop
           pkgs.bun
+          pkgs.dbeaver
           pkgs.fzf
           pkgs.git
           pkgs.git-cliff
