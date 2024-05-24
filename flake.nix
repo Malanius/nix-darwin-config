@@ -47,6 +47,7 @@
           pkgs.openvpn
           pkgs.pkg-config
           pkgs.poetry
+          pkgs.postgresql_16
           pkgs.powerline
           pkgs.raycast
           pkgs.rustup
