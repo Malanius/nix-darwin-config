@@ -62,6 +62,7 @@
           taps = [ "derailed/k9s" ];
           brews = [ "derailed/k9s/k9s" ];
           # casks = [ "superproductivity" ]; # doesn't work, SO complains it can't be check for malicious software
+          masApps = { "Toggl Track: Hours & Time Log" = 1291898086; };
         };
 
         fonts.fontDir.enable = true;
