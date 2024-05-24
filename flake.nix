@@ -34,6 +34,7 @@
           pkgs.gitkraken
           pkgs.go
           pkgs.gnupg
+          # pkgs.insomnia # doesn't have arm64 build
           pkgs.krew
           pkgs.kubernetes-helm
           pkgs.localstack
@@ -55,13 +56,18 @@
           pkgs.vscode
           pkgs.wakatime
           pkgs.yarn
+          # pkgs.super-productivity # doesn't have arm64 build
         ];
 
         homebrew = {
           enable = true;
           taps = [ "derailed/k9s" ];
           brews = [ "derailed/k9s/k9s" ];
-          # casks = [ "superproductivity" ]; # doesn't work, SO complains it can't be check for malicious software
+          casks = [
+            # "superproductivity" # doesn't work, OS complains it can't be check for malicious software
+            "insomnia"
+            "inso"
+          ];
           masApps = { "Toggl Track: Hours & Time Log" = 1291898086; };
         };
 
