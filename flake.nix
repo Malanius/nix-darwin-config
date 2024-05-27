@@ -33,6 +33,7 @@
           pkgs.bun
           pkgs.dbeaver
           pkgs.duf
+          pkgs.eza
           pkgs.fzf
           pkgs.git
           pkgs.git-cliff
