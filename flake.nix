@@ -52,6 +52,7 @@
           pkgs.obsidian
           pkgs.openvpn
           pkgs.pkg-config
+          pkgs.python312
           pkgs.poetry
           pkgs.postgresql_16
           pkgs.powerline
