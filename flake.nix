@@ -31,6 +31,7 @@
           pkgs.btop
           pkgs.bun
           pkgs.dbeaver
+          pkgs.duf
           pkgs.fzf
           pkgs.git
           pkgs.git-cliff
