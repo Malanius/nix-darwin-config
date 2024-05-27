@@ -19,6 +19,8 @@
         nixpkgs.config = { allowUnfree = true; };
         environment.systemPackages = [
           # pkgs._1password-gui # complains it is not installed in Applications :(
+          # pkgs.insomnia # doesn't have arm64 build
+          # pkgs.super-productivity # doesn't have arm64 build
           pkgs._1password
           pkgs.alacritty
           pkgs.argocd
@@ -35,14 +37,14 @@
           pkgs.git-lfs
           pkgs.gitflow
           pkgs.gitkraken
-          pkgs.go
           pkgs.gnupg
-          # pkgs.insomnia # doesn't have arm64 build
+          pkgs.go
           pkgs.krew
           pkgs.kubernetes-helm
           pkgs.localstack
           pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
           pkgs.neovim
+          pkgs.ngrok
           pkgs.nixfmt-classic
           pkgs.nodePackages_latest.pnpm
           pkgs.obsidian
@@ -60,7 +62,6 @@
           pkgs.vscode
           pkgs.wakatime
           pkgs.yarn
-          # pkgs.super-productivity # doesn't have arm64 build
         ];
 
         homebrew = {
