@@ -29,6 +29,7 @@
           pkgs.awslogs
           pkgs.bat
           pkgs.btop
+          pkgs.bottom
           pkgs.bun
           pkgs.dbeaver
           pkgs.duf
