@@ -66,7 +66,7 @@
         homebrew = {
           enable = true;
           taps = [ "derailed/k9s" ];
-          brews = [ "derailed/k9s/k9s" ];
+          brews = [ "derailed/k9s/k9s" "tfenv" ];
           casks = [
             # "superproductivity" # doesn't work, OS complains it can't be check for malicious software
             "insomnia"
@@ -166,9 +166,8 @@
           jf-dev = "~/.scripts/assume_role jf-dev";
           jf-stage = "~/.scripts/assume_role jf-stage";
           jf-prod = "~/.scripts/assume_role jf-prod";
-          whereami="env | grep AWS_VAULT";
+          whereami = "env | grep AWS_VAULT";
         };
-
       };
     in {
       # Build darwin flake using:
