@@ -47,6 +47,7 @@
           pkgs.lazygit
           pkgs.localstack
           pkgs.lunarvim # bug present w/ loading treesitter, see https://github.com/NixOS/nixpkgs/issues/312971
+          pkgs.mpv-unwrapped
           pkgs.neovim
           pkgs.ngrok
           pkgs.nixfmt-classic
