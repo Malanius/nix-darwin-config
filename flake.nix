@@ -1,4 +1,4 @@
-# TODO: find how to properly run home-manager to create the utility srcipt above and dotfiles
+# TODO: find how to properly run home-manager to create the utility srcipts and dotfiles
 # TODO: modularize the config
 {
   description = "Malanius Darwin Flake";
@@ -19,7 +19,7 @@
         nixpkgs.config = { allowUnfree = true; };
         environment.systemPackages = [
           # pkgs._1password-gui # complains it is not installed in Applications :(
-          # pkgs.insomnia # doesn't have arm64 build
+          # pkgs.insomnia # doesn't have arm64 build in nixpgs, using homebrew
           # pkgs.super-productivity # doesn't have arm64 build
           pkgs._1password
           pkgs.alacritty
@@ -28,8 +28,8 @@
           pkgs.awscli2
           pkgs.awslogs
           pkgs.bat
-          pkgs.btop
           pkgs.bottom
+          pkgs.btop
           pkgs.bun
           pkgs.dbeaver
           pkgs.duf
@@ -55,10 +55,10 @@
           pkgs.obsidian
           pkgs.openvpn
           pkgs.pkg-config
-          pkgs.python312
           pkgs.poetry
           pkgs.postgresql_16
           pkgs.powerline
+          pkgs.python312
           pkgs.raycast
           pkgs.rustup
           pkgs.spotify
