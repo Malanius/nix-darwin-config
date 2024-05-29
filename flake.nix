@@ -42,6 +42,7 @@
           pkgs.gitkraken
           pkgs.gnupg
           pkgs.go
+          pkgs.httpie
           pkgs.krew
           pkgs.kubernetes-helm
           pkgs.lazydocker
