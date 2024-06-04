@@ -49,6 +49,7 @@
           pkgs.lazydocker
           pkgs.lazygit
           pkgs.localstack
+          pkgs.mailspring
           pkgs.mpv-unwrapped
           pkgs.neovim
           pkgs.ngrok
