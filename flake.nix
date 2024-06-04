@@ -76,7 +76,7 @@
         homebrew = {
           enable = true;
           taps = [ "derailed/k9s" ];
-          brews = [ "derailed/k9s/k9s" "tfenv" ];
+          brews = [ "derailed/k9s/k9s" "tfenv" "pam-reattach" ];
           casks = [
             # "superproductivity" # doesn't work, OS complains it can't be check for malicious software
             "insomnia"
