@@ -43,6 +43,7 @@
           pkgs.gnupg
           pkgs.go
           pkgs.httpie
+          # pkgs.httpie-desktop # no arm64 build
           pkgs.krew
           pkgs.kubernetes-helm
           pkgs.lazydocker
@@ -80,7 +81,10 @@
             "insomnia"
             "inso"
           ];
-          masApps = { "Toggl Track: Hours & Time Log" = 1291898086; };
+          masApps = {
+            "Toggl Track: Hours & Time Log" = 1291898086;
+            "Fresco" = 1251572132;
+          };
         };
 
         fonts.fontDir.enable = true;
