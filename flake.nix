@@ -61,7 +61,8 @@
           pkgs.poetry
           pkgs.postgresql_16
           pkgs.powerline
-          pkgs.python312
+          #pkgs.python312
+          pkgs.pyenv
           pkgs.raycast
           pkgs.rustup
           pkgs.spotify
