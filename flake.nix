@@ -31,6 +31,7 @@
           pkgs.bottom
           pkgs.btop
           pkgs.bun
+          pkgs.cookiecutter
           pkgs.dbeaver
           pkgs.duf
           pkgs.eza
