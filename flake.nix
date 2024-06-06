@@ -42,6 +42,7 @@
           pkgs.gitflow
           pkgs.gitkraken
           pkgs.gnupg
+          pkgs.graphviz
           pkgs.go
           pkgs.httpie
           # pkgs.httpie-desktop # no arm64 build
