@@ -37,6 +37,7 @@
           pkgs.duf
           pkgs.eza
           pkgs.fzf
+          pkgs.gh
           pkgs.git
           pkgs.git-cliff
           pkgs.git-lfs
