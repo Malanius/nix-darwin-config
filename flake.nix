@@ -91,6 +91,7 @@
           masApps = {
             "Toggl Track: Hours & Time Log" = 1291898086;
             "Fresco" = 1251572132;
+            "reMarkable" = 1276493162;
           };
         };
 
