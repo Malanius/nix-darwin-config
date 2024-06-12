@@ -33,7 +33,7 @@
           pkgs.bun
           pkgs.cookiecutter
           pkgs.dbeaver
-          pkgs.delta
+          pkgs.difftastic
           pkgs.duf
           pkgs.eza
           pkgs.fzf
