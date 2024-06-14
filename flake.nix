@@ -74,6 +74,7 @@
           pkgs.starship
           pkgs.thefuck
           pkgs.vim
+          pkgs.visidata
           pkgs.vscode
           pkgs.wakatime
           pkgs.yarn
