@@ -65,6 +65,7 @@
           pkgs.openvpn
           pkgs.pipx
           pkgs.pkg-config
+          pkgs.pandoc
           pkgs.poetry
           pkgs.postgresql_16
           pkgs.powerline
@@ -74,6 +75,7 @@
           pkgs.rustup
           pkgs.spotify
           pkgs.starship
+          pkgs.tectonic
           pkgs.thefuck
           pkgs.vim
           pkgs.visidata
