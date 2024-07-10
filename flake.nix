@@ -36,6 +36,7 @@
           pkgs.difftastic
           pkgs.duf
           pkgs.eza
+          pkgs.fx
           pkgs.fzf
           pkgs.gh
           pkgs.git
@@ -48,6 +49,7 @@
           pkgs.go
           pkgs.httpie
           # pkgs.httpie-desktop # no arm64 build
+          pkgs.jq
           pkgs.krew
           pkgs.kubernetes-helm
           pkgs.lazydocker
