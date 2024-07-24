@@ -66,7 +66,7 @@
           pkgs.pipx
           pkgs.pkg-config
           pkgs.pandoc
-          pkgs.poetry
+          # pkgs.poetry
           pkgs.postgresql_16
           pkgs.powerline
           #pkgs.python312
