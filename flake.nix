@@ -75,6 +75,7 @@
           pkgs.rustup
           pkgs.spotify
           pkgs.starship
+          pkgs.sq
           pkgs.tectonic
           pkgs.thefuck
           pkgs.vim
