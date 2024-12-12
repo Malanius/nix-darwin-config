@@ -88,7 +88,13 @@
         homebrew = {
           enable = true;
           taps = [ "derailed/k9s" ];
-          brews = [ "derailed/k9s/k9s" "tfenv" "pam-reattach" "kreuzwerker/taps/m1-terraform-provider-helper"];
+          brews = [
+            "derailed/k9s/k9s"
+            "kreuzwerker/taps/m1-terraform-provider-helper"
+            "openssl@3"
+            "pam-reattach"
+            "tfenv"
+          ];
           casks = [
             # "superproductivity" # doesn't work, OS complains it can't be check for malicious software
             "insomnia"
