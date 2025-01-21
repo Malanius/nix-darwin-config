@@ -108,8 +108,7 @@
           };
         };
 
-        fonts.fontDir.enable = true;
-        fonts.fonts = [ pkgs.nerdfonts ];
+        fonts.packages = [ pkgs.nerdfonts ];
 
         # Auto upgrade nix package and the daemon service.
         services.nix-daemon.enable = true;
