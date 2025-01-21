@@ -35,6 +35,7 @@
           pkgs.dbeaver
           pkgs.difftastic
           pkgs.duf
+          pkgs.entr
           pkgs.eza
           pkgs.fx
           pkgs.fzf
