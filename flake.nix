@@ -32,7 +32,7 @@
           pkgs.btop
           pkgs.bun
           pkgs.cookiecutter
-          pkgs.dbeaver
+          pkgs.dbeaver-bin
           pkgs.difftastic
           pkgs.duf
           pkgs.entr
