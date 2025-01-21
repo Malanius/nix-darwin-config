@@ -83,9 +83,9 @@
           pkgs.visidata
           pkgs.vscode
           pkgs.wakatime
-          pkgs.xz
+          # pkgs.xz
           pkgs.yarn
-          pkgs.zlib
+          # pkgs.zlib
         ];
 
         homebrew = {
@@ -97,6 +97,8 @@
             "openssl@3"
             "pam-reattach"
             "tfenv"
+            "xz"
+            "zlib"
           ];
           casks = [
             # "superproductivity" # doesn't work, OS complains it can't be check for malicious software
