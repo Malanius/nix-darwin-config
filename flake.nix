@@ -83,7 +83,9 @@
           pkgs.visidata
           pkgs.vscode
           pkgs.wakatime
+          pkgs.xz
           pkgs.yarn
+          pkgs.zlib
         ];
 
         homebrew = {
