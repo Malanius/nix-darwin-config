@@ -108,7 +108,8 @@
           };
         };
 
-        fonts.packages = [ pkgs.nerdfonts ];
+        fonts.packages = [ ] ++ builtins.filter nixpkgs.lib.attrsets.isDerivation
+          (builtins.attrValues pkgs.nerd-fonts);
 
         # Auto upgrade nix package and the daemon service.
         services.nix-daemon.enable = true;
