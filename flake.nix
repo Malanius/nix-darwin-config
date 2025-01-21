@@ -74,6 +74,7 @@
           pkgs.pyenv
           pkgs.raycast
           pkgs.rustup
+          pkgs.silver-searcher
           pkgs.spotify
           pkgs.starship
           pkgs.sq
