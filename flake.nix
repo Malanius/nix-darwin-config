@@ -98,7 +98,12 @@
             "Vacasa/utility" # this requires to have HOMEBREW_GITHUB_API_TOKEN
           ];
           brews = [
+            "colima"
             "derailed/k9s/k9s"
+            "docker-buildx"
+            "docker-compose"
+            "docker-credential-helper"
+            "docker"
             "kreuzwerker/taps/m1-terraform-provider-helper"
             "openssl@3"
             "pam-reattach"
