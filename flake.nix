@@ -76,6 +76,7 @@
           pkgs.raycast
           pkgs.rustup
           pkgs.silver-searcher
+          pkgs.speedtest-cli
           pkgs.spotify
           pkgs.starship
           pkgs.sq
