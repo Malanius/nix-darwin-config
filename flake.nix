@@ -93,7 +93,10 @@
 
         homebrew = {
           enable = true;
-          taps = [ "derailed/k9s" ];
+          taps = [
+            "derailed/k9s"
+            "Vacasa/utility" # this requires to have HOMEBREW_GITHUB_API_TOKEN
+          ];
           brews = [
             "derailed/k9s/k9s"
             "kreuzwerker/taps/m1-terraform-provider-helper"
