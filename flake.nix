@@ -141,6 +141,7 @@
         programs.direnv.enable = true;
         # Set Git commit hash for darwin-version.
         system.configurationRevision = self.rev or self.dirtyRev or null;
+        ids.gids.nixbld = 350;
 
         # Used for backwards compatibility, please read the changelog before changing.
         # $ darwin-rebuild changelog
@@ -150,7 +151,10 @@
         nixpkgs.hostPlatform = "aarch64-darwin";
 
         # Some goodies
-        security.pam.enableSudoTouchIdAuth = true;
+        # This one seems to reset the /etc/pam.d/sudo_local to original verion
+        # not using the pam-reattach module
+        # maybe disable this and use your own version of the file?
+        security.pam.services.sudo_local.touchIdAuth = true;
 
         system.defaults = {
           dock = {
