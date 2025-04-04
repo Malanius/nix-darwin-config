@@ -4,7 +4,7 @@ switch:
 	darwin-rebuild switch --flake .
 
 init-devtools:
-	xcode-select --install
+	-xcode-select --install
 	
 # this is using using Determinate Systems' nix installer: https://zero-to-nix.com/concepts/nix-installer
 install-nix: init-devtools
