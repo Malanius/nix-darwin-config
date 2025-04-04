@@ -106,7 +106,6 @@
             "docker"
             "kreuzwerker/taps/m1-terraform-provider-helper"
             "openssl@3"
-            "pam-reattach"
             "tfenv"
             "xz"
             "zlib"
@@ -158,11 +157,11 @@
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "aarch64-darwin";
 
-        # Some goodies
-        # This one seems to reset the /etc/pam.d/sudo_local to original verion
-        # not using the pam-reattach module
-        # maybe disable this and use your own version of the file?
-        security.pam.services.sudo_local.touchIdAuth = true;
+        security.pam.services.sudo_local = {
+          enable = true;
+          reattach = true;
+          touchIdAuth = true;
+        };
 
         system.defaults = {
           dock = {
