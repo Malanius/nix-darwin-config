@@ -65,6 +65,7 @@
           pkgs.nodePackages_latest.pnpm
           pkgs.obsidian
           pkgs.openvpn
+          pkgs.ouch
           pkgs.pipx
           pkgs.pkg-config
           pkgs.pandoc
