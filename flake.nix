@@ -164,6 +164,7 @@
           touchIdAuth = true;
         };
 
+        system.primaryUser = "malanius";
         system.defaults = {
           dock = {
             autohide = false;
