@@ -1,4 +1,7 @@
-.PHONY: switch init-devtools install-nix
+.PHONY: updateswitch init-devtools install-nix
+
+update:
+	nix flake update
 
 switch:
 	sudo darwin-rebuild switch --flake .
