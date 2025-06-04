@@ -1,7 +1,7 @@
 .PHONY: switch init-devtools install-nix
 
 switch:
-	darwin-rebuild switch --flake .
+	sudo darwin-rebuild switch --flake .
 
 init-devtools:
 	-xcode-select --install
