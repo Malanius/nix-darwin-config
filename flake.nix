@@ -122,6 +122,11 @@
             "Fresco" = 1251572132;
             "reMarkable" = 1276493162;
           };
+          onActivation = {
+            cleanup = "zap";
+            autoUpdate = true;
+            upgrade = true;
+          };
         };
 
         fonts.packages = [ ]
