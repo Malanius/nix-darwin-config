@@ -81,7 +81,8 @@
           pkgs.starship
           pkgs.sq
           pkgs.tectonic
-          pkgs.thefuck
+          # pkgs.thefuck
+          pkgs.pay-respects
           pkgs.vim
           pkgs.visidata
           pkgs.vscode
