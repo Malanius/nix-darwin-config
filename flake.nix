@@ -111,6 +111,7 @@
             "tfenv"
             "xz"
             "zlib"
+            "zsh-completions"
           ];
           casks = [
             # "superproductivity" # doesn't work, OS complains it can't be check for malicious software
