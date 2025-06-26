@@ -190,6 +190,7 @@
           screencapture.location = "~/Pictures/screenshots";
           screensaver.askForPasswordDelay = 10;
           trackpad = { Clicking = true; };
+          NSGlobalDomain.KeyRepeat = 1;
         };
         system.startup.chime = false;
         system.keyboard = {
