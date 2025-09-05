@@ -8,6 +8,8 @@ set -euo pipefail
 input="cargo.list"
 
 while read p; do
+  [ -z "$p" ] && continue
+  [[ $p = \#* ]] && continue
   echo "⚙️ Installing $p"
   cargo install $p
   echo "✅ $p"

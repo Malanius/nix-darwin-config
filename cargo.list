@@ -1,8 +1,12 @@
+# DEV related tooling I would rather isntall by cargo than Nixpkgs
 cargo-generate --features vendored-openssl
 cargo-pio
 cargo-update --features vendored-openssl
 dioxus-cli
 espflash
 ldproxy
+
+# Doesn't have Nix package
 tod
+# Nix build is missing aarch64 compatibility
 xcp
