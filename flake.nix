@@ -65,7 +65,7 @@
           pkgs.rustup
           pkgs.silver-searcher
           pkgs.speedtest-cli
-          pkgs.spotify
+          #pkgs.spotify # broken MacOS build, using native version
           pkgs.starship
           pkgs.sq
           pkgs.tectonic
