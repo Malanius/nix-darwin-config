@@ -20,8 +20,6 @@
         environment.systemPackages = [
           # pkgs._1password-gui # complains it is not installed in Applications :(
           pkgs._1password-cli
-          # pkgs.insomnia # doesn't have arm64 build in nixpgs, using homebrew
-          # pkgs.super-productivity # doesn't have arm64 build
           pkgs.alacritty
           pkgs.argocd
           pkgs.aws-vault
@@ -88,9 +86,8 @@
           pkgs.visidata
           pkgs.vscode
           pkgs.wakatime
-          # pkgs.xz
+
           pkgs.yarn
-          # pkgs.zlib
 
           # Rust packages
           pkgs.broot
