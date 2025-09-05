@@ -80,6 +80,7 @@
           # DEV / Python
           pkgs.pipx
           pkgs.pyenv
+          pkgs.uv
 
 
           # DEV / k8s
