@@ -21,7 +21,6 @@
           # pkgs._1password-gui # complains it is not installed in Applications :(
           pkgs._1password-cli
           pkgs.alacritty
-          pkgs.argocd
           pkgs.aws-vault
           pkgs.awscli2
           pkgs.awslogs
@@ -49,8 +48,6 @@
           pkgs.httpie
           # pkgs.httpie-desktop # no arm64 build
           pkgs.jq
-          pkgs.krew
-          pkgs.kubernetes-helm
           pkgs.lazydocker
           pkgs.lazygit
           pkgs.localstack
@@ -83,6 +80,12 @@
           pkgs.vscode
           pkgs.wakatime
 
+
+          # DEV / k8s
+          # pkgs.argocd
+          # pkgs.krew
+          # pkgs.kubernetes-helm
+
           pkgs.yarn
 
           # Rust packages
@@ -109,11 +112,11 @@
         homebrew = {
           enable = true;
           taps = [
-            "derailed/k9s"
+            # "derailed/k9s"
           ];
           brews = [
             "colima"
-            "derailed/k9s/k9s"
+            # "derailed/k9s/k9s"
             "docker-buildx"
             "docker-compose"
             "docker-credential-helper"
