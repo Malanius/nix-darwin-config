@@ -58,12 +58,10 @@
           pkgs.nodePackages_latest.pnpm
           pkgs.openvpn
           pkgs.ouch
-          pkgs.pipx
           pkgs.pkg-config
           pkgs.pandoc
           # pkgs.poetry
           pkgs.postgresql_16
-          pkgs.pyenv
           pkgs.raycast
           pkgs.rustup
           pkgs.silver-searcher
@@ -78,6 +76,10 @@
           pkgs.visidata
           pkgs.vscode
           pkgs.wakatime
+
+          # DEV / Python
+          pkgs.pipx
+          pkgs.pyenv
 
 
           # DEV / k8s
