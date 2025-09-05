@@ -57,7 +57,6 @@
           pkgs.nixfmt-classic
           pkgs.nodePackages_latest.pnpm
           pkgs.openvpn
-          pkgs.ouch
           pkgs.pkg-config
           pkgs.pandoc
           # pkgs.poetry
@@ -110,7 +109,7 @@
           pkgs.topgrade
           pkgs.tre-command
           pkgs.tree-sitter
-          pkgs.xcp
+          # pkgs.xcp # some of the dependent libs don't specify aarch as supported
         ];
 
         homebrew = {

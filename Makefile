@@ -5,6 +5,8 @@ update:
 
 switch:
 	sudo darwin-rebuild switch --flake .
+	rustup default stable
+	./cargo-bins.sh
 
 init-devtools:
 	-xcode-select --install
