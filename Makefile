@@ -20,3 +20,6 @@ install-homebrew:
 
 install-resh:
 	curl -fsSL https://raw.githubusercontent.com/curusarn/resh/master/scripts/rawinstall.sh | bash
+
+install-nvm:
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
