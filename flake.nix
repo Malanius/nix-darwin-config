@@ -18,64 +18,80 @@
 
         nixpkgs.config = { allowUnfree = true; };
         environment.systemPackages = [
+          # Apps / Utilities
+          pkgs._1password-cli # op for cli
           # pkgs._1password-gui # complains it is not installed in Applications :(
-          pkgs._1password-cli
-          pkgs.alacritty
+          # pkgs.openvpn
+          pkgs.pkg-config # FIXME: what needs this?
+          pkgs.raycast # can't use Mac without it, I know, skill issue 😒
+          pkgs.speedtest-cli
+
+          # Apps / Comms
+          pkgs.mailspring
+
+          # Apps / Media
+          pkgs.mpv-unwrapped
+          #pkgs.spotify # broken MacOS build, using native version
+
+          # Apps / CLI
+          pkgs.alacritty # best terminal ever, https://alacritty.org/
+          pkgs.bat # better cat, https://github.com/sharkdp/bat
+          pkgs.broot # fuzzy file navigator, https://github.com/Canop/broot
+          pkgs.btop # resource monitor, https://github.com/aristocratos/btop
+          pkgs.dua # disk usage analyzer, https://github.com/Byron/dua-cli
+          pkgs.duf # disk usage formatter, https://github.com/muesli/duf/
+          pkgs.dust # more intuitive du, https://github.com/bootandy/dust
+          pkgs.entr # run arbitrary commands when files change, https://eradman.com/entrproject/
+          pkgs.eva # cli calculator, https://github.com/oppiliappan/eva
+          pkgs.eza # better ls, https://github.com/eza-community/eza
+          pkgs.fd # better find, https://github.com/sharkdp/fd
+          pkgs.fx # better jq for json, https://github.com/antonmedv/fx
+          pkgs.fzf # fuzzy finder, used by many other tools, https://github.com/junegunn/fzf
+          pkgs.ouch # multi-format file de/compressor, https://github.com/ouch-org/ouch
+          pkgs.pay-respects # better thefuck?, https://codeberg.org/iff/pay-respects 
+          pkgs.rip2 # rm improved, with recycle bin, https://github.com/MilesCranmer/rip2
+          pkgs.ripgrep # superfast grep, https://github.com/BurntSushi/ripgrep
+          pkgs.rnr # rename files with regex, https://github.com/ismaelgv/rnr
+          pkgs.sd # sed but better, https://github.com/chmln/sd
+          pkgs.silver-searcher # ag, Code-searching tool similar to ack, but faster, https://github.com/ggreer/the_silver_searcher/
+          pkgs.starship # the only shell prompt you'll ever need, https://starship.rs/
+          pkgs.tealdeer # fast, rust-based tldr client, https://github.com/tealdeer-rs/tealdeer
+          # pkgs.thefuck # no longer maintained and disappeared from nixpkgs
+          pkgs.topgrade # upgrade everything, https://github.com/topgrade-rs/topgrade
+          pkgs.tre-command # better fster, tree, still can't properly sort, https://github.com/dduan/tre
+          # pkgs.xcp # some of the dependent libs don't specify aarch64 as supported
+
+          # DEV / AWS
           pkgs.aws-vault
           pkgs.awscli2
           pkgs.awslogs
-          pkgs.bat
-          pkgs.btop
-          pkgs.cookiecutter
+          pkgs.localstack
+
+          # DEV / Databases
           pkgs.dbeaver-bin
+          pkgs.postgresql_16
+          pkgs.sq # Swiss army knife for data, https://sq.io/
+          pkgs.visidata
+
+          # DEV / Git
           pkgs.difftastic
-          pkgs.duf
-          pkgs.entr
-          pkgs.eza
-          pkgs.fx
-          pkgs.fzf
-          pkgs.gh
+          pkgs.gh # GitHub CLI, https://cli.github.com/
           pkgs.git
-          pkgs.git-cliff
+          pkgs.git-cliff # changelog generator, https://github.com/orhun/git-cliff
           pkgs.git-lfs
           pkgs.gitflow
           pkgs.gitkraken
           pkgs.gk-cli
           pkgs.gnupg
-          pkgs.graphviz
-          pkgs.go
-          pkgs.httpie
-          # pkgs.httpie-desktop # no arm64 build
-          pkgs.jq
-          pkgs.lazydocker
           pkgs.lazygit
-          pkgs.localstack
-          pkgs.mailspring
-          pkgs.mpv-unwrapped
-          pkgs.ngrok
-          pkgs.nixfmt-classic
-          pkgs.nodePackages_latest.pnpm
-          pkgs.openvpn
-          pkgs.pkg-config
-          pkgs.pandoc
-          # pkgs.poetry
-          pkgs.postgresql_16
-          pkgs.raycast
-          pkgs.silver-searcher
-          pkgs.speedtest-cli
-          #pkgs.spotify # broken MacOS build, using native version
-          pkgs.starship
-          pkgs.sq
-          pkgs.tectonic
-          # pkgs.thefuck
-          pkgs.pay-respects
-          pkgs.vim
-          pkgs.visidata
-          pkgs.vscode
-          pkgs.wakatime
+
+          # DEV / Docker
+          pkgs.lazydocker
 
           # DEV / Python
+          pkgs.graphviz # used by diagrams-py
           pkgs.pipx
+          # pkgs.poetry # act's wonky when isntalled from nix, surpassed by UV anyways
           pkgs.pyenv
           pkgs.uv
 
@@ -86,38 +102,39 @@
 
           # DEV / Node
           pkgs.bun
+          pkgs.nodePackages_latest.pnpm
           pkgs.yarn
 
           # DEV / Rust
           pkgs.rustup
 
-          # Rust packages
-          pkgs.broot
-          pkgs.dua
-          pkgs.dust
-          pkgs.eva
-          pkgs.fd
-          pkgs.just
-          pkgs.kondo
-          pkgs.navi
-          pkgs.ouch
-          pkgs.rip2
-          pkgs.ripgrep
-          pkgs.rnr
-          pkgs.sd
-          pkgs.tealdeer
-          pkgs.tokei
-          pkgs.topgrade
-          pkgs.tre-command
-          # pkgs.xcp # some of the dependent libs don't specify aarch as supported
-
           # DEV / Neovim
+          pkgs.vim # fallback for neovim
           pkgs.neovim
+          pkgs.bottom # used by AstroNvim
           pkgs.gdu # used by AstroNvim
-          pkgs.tree-sitter # used by AstroNvim
           pkgs.lazygit # used by AstroNvim
           pkgs.ripgrep  # used by AstroNvim
-          pkgs.bottom # used by AstroNvim
+          pkgs.tree-sitter # used by AstroNvim
+
+          # DEV / Go
+          pkgs.go
+
+          # DEV / Tools
+          pkgs.cookiecutter # project templating, https://cookiecutter.readthedocs.io/en/latest/
+          pkgs.httpie # better curl, https://httpie.io/
+          # pkgs.httpie-desktop # no arm64 build
+          pkgs.jq # command-line JSON processor, https://stedolan.github.io/jq/
+          pkgs.just # better make, https://github.com/casey/just
+          pkgs.kondo # clean up space from inactive projects, https://github.com/tbillington/kondo
+          pkgs.navi # interactive cheatsheet tool, https://github.com/denisidoro/navi
+          pkgs.ngrok # secure introspectable tunnels to localhost, https://ngrok.com/
+          pkgs.nixfmt-classic # Nix files formatter, required by VSCode extension
+          pkgs.pandoc # universal document converter, https://hackage.haskell.org/package/pandoc-cli
+          pkgs.tectonic # LaTeX engine, required by Pandoc for PDF output, https://tectonic-typesetting.github.io/en-US/
+          pkgs.tokei # Count your code, quickly, https://github.com/XAMPPRocky/tokei
+          pkgs.vscode # VSCode, https://code.visualstudio.com/
+          pkgs.wakatime # time tracking, https://wakatime.com/
         ];
 
         homebrew = {
@@ -141,8 +158,8 @@
             "zsh-completions"
           ];
           casks = [
-            "insomnia"
-            "inso"
+            "insomnia" # Gui Insomina
+            "inso" # CLI Insomnia
             "vesktop"
           ];
           masApps = {
