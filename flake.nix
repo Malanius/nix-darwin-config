@@ -238,15 +238,23 @@
         };
 
         environment.shellAliases = {
-          rm = "rm -v";
-          mv = "mv -v";
           cp = "xcp -v";
           ls = "eza";
           ll = "ls -alF";
           la = "ls -A";
+          l = "ls -CF";
           lll = "ls -alF | less";
           llh = "ls -alFh";
+          rm = "rm -v";
+          mv = "mv -v";
+          # Dev tools
+          d = "docker";
+          dc = "docker-compose";
+          k = "kubectl";
+          kn = "k9s";
+          ldc = "lazydocker";
           lg = "lazygit";
+          tf = "terraform";
         };
       };
     in {
