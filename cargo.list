@@ -1,4 +1,4 @@
-# DEV related tooling I would rather isntall by cargo than Nixpkgs
+# DEV related tooling I would rather install by cargo than Nixpkgs
 cargo-generate --features vendored-openssl
 cargo-pio
 cargo-update --features vendored-openssl
