@@ -91,6 +91,26 @@
           # pkgs.xz
           pkgs.yarn
           # pkgs.zlib
+
+          # Rust packages
+          pkgs.broot
+          pkgs.dua
+          pkgs.dust
+          pkgs.eva
+          pkgs.fd
+          pkgs.just
+          pkgs.kondo
+          pkgs.navi
+          pkgs.ouch
+          pkgs.rip2
+          pkgs.rnr
+          pkgs.sd
+          pkgs.tealdeer
+          pkgs.tokei
+          pkgs.topgrade
+          pkgs.tre-command
+          pkgs.tree-sitter
+          pkgs.xcp
         ];
 
         homebrew = {

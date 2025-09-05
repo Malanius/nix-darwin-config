@@ -1,30 +1,7 @@
-bandwhich
-broot
 cargo-generate --features vendored-openssl
 cargo-pio
 cargo-update --features vendored-openssl
 dioxus-cli
-du-dust
-dua-cli
 espflash
-espup
-eva
-fd-find
-gping
-just
-kondo
 ldproxy
-navi
-ouch
-procs
-rip2
-rnr
-sd
-spotify-tui
-tealdeer
 tod
-tokei
-topgrade
-tre-command
-tree-sitter-cli
-xcp
