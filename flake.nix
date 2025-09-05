@@ -125,6 +125,7 @@
           pkgs.httpie # better curl, https://httpie.io/
           # pkgs.httpie-desktop # no arm64 build
           pkgs.jq # command-line JSON processor, https://stedolan.github.io/jq/
+          # pkgs.jetbrains-toolbox # Older version, can't auto-update, using native
           pkgs.just # better make, https://github.com/casey/just
           pkgs.kondo # clean up space from inactive projects, https://github.com/tbillington/kondo
           pkgs.navi # interactive cheatsheet tool, https://github.com/denisidoro/navi
