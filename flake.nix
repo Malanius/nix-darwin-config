@@ -103,6 +103,7 @@
           pkgs.navi
           pkgs.ouch
           pkgs.rip2
+          pkgs.ripgrep
           pkgs.rnr
           pkgs.sd
           pkgs.tealdeer
