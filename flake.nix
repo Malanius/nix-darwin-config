@@ -117,7 +117,6 @@
           enable = true;
           taps = [
             "derailed/k9s"
-            "Vacasa/utility" # this requires to have HOMEBREW_GITHUB_API_TOKEN
           ];
           brews = [
             "colima"
