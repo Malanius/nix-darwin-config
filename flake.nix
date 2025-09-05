@@ -62,7 +62,6 @@
           # pkgs.poetry
           pkgs.postgresql_16
           pkgs.raycast
-          pkgs.rustup
           pkgs.silver-searcher
           pkgs.speedtest-cli
           #pkgs.spotify # broken MacOS build, using native version
@@ -81,7 +80,6 @@
           pkgs.pyenv
           pkgs.uv
 
-
           # DEV / k8s
           # pkgs.argocd
           # pkgs.krew
@@ -90,6 +88,9 @@
           # DEV / Node
           pkgs.bun
           pkgs.yarn
+
+          # DEV / Rust
+          pkgs.rustup
 
           # Rust packages
           pkgs.broot
