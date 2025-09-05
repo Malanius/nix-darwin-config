@@ -114,6 +114,7 @@
         ];
 
         homebrew = {
+          # Still requires homebrew to be installed manually once
           enable = true;
           taps = [
             # "derailed/k9s"
@@ -125,9 +126,9 @@
             "docker-compose"
             "docker-credential-helper"
             "docker"
-            "kreuzwerker/taps/m1-terraform-provider-helper"
+            # "kreuzwerker/taps/m1-terraform-provider-helper"
             "openssl@3"
-            "tfenv"
+            #"tfenv"
             "xz"
             "zlib"
             "zsh-completions"
