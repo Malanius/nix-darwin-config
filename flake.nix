@@ -246,10 +246,10 @@
     in {
       # Build darwin flake using:
       # $ darwin-rebuild build --flake .#simple
-      darwinConfigurations."K0WWL9G0P7" =
+      darwinConfigurations."macshit" =
         nix-darwin.lib.darwinSystem { modules = [ configuration ]; };
 
       # Expose the package set, including overlays, for convenience.
-      darwinPackages = self.darwinConfigurations."K0WWL9G0P7".pkgs;
+      darwinPackages = self.darwinConfigurations."macshit".pkgs;
     };
 }
