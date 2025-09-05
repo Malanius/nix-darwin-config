@@ -26,7 +26,6 @@
           pkgs.awscli2
           pkgs.awslogs
           pkgs.bat
-          pkgs.bottom
           pkgs.btop
           pkgs.bun
           pkgs.cookiecutter
@@ -61,7 +60,6 @@
           pkgs.ngrok
           pkgs.nixfmt-classic
           pkgs.nodePackages_latest.pnpm
-          pkgs.obsidian
           pkgs.openvpn
           pkgs.ouch
           pkgs.pipx
@@ -69,8 +67,6 @@
           pkgs.pandoc
           # pkgs.poetry
           pkgs.postgresql_16
-          pkgs.powerline
-          #pkgs.python312
           pkgs.pyenv
           pkgs.raycast
           pkgs.rustup
