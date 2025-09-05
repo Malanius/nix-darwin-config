@@ -1,4 +1,4 @@
-.PHONY: updateswitch init-devtools install-nix
+.PHONY: update switch init-devtools install-nix install-homebrew install-resh
 
 update:
 	nix flake update
@@ -14,3 +14,9 @@ init-devtools:
 # this is using using Determinate Systems' nix installer: https://zero-to-nix.com/concepts/nix-installer
 install-nix: init-devtools
 	curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+
+install-homebrew:
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+install-resh:
+	curl -fsSL https://raw.githubusercontent.com/curusarn/resh/master/scripts/rawinstall.sh | bash
