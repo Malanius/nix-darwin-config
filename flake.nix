@@ -52,7 +52,6 @@
           pkgs.localstack
           pkgs.mailspring
           pkgs.mpv-unwrapped
-          pkgs.neovim
           pkgs.ngrok
           pkgs.nixfmt-classic
           pkgs.nodePackages_latest.pnpm
@@ -110,8 +109,15 @@
           pkgs.tokei
           pkgs.topgrade
           pkgs.tre-command
-          pkgs.tree-sitter
           # pkgs.xcp # some of the dependent libs don't specify aarch as supported
+
+          # DEV / Neovim
+          pkgs.neovim
+          pkgs.gdu # used by AstroNvim
+          pkgs.tree-sitter # used by AstroNvim
+          pkgs.lazygit # used by AstroNvim
+          pkgs.ripgrep  # used by AstroNvim
+          pkgs.bottom # used by AstroNvim
         ];
 
         homebrew = {
