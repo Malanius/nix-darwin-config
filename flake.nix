@@ -26,7 +26,6 @@
           pkgs.awslogs
           pkgs.bat
           pkgs.btop
-          pkgs.bun
           pkgs.cookiecutter
           pkgs.dbeaver-bin
           pkgs.difftastic
@@ -86,6 +85,8 @@
           # pkgs.krew
           # pkgs.kubernetes-helm
 
+          # DEV / Node
+          pkgs.bun
           pkgs.yarn
 
           # Rust packages
