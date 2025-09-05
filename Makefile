@@ -23,3 +23,7 @@ install-resh:
 
 install-nvm:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+install-astro-nvim:
+	git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+	rm -rf ~/.config/nvim/.git
