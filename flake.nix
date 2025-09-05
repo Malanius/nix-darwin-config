@@ -134,14 +134,19 @@
             "zsh-completions"
           ];
           casks = [
-            # "superproductivity" # doesn't work, OS complains it can't be check for malicious software
             "insomnia"
             "inso"
+            "vesktop"
           ];
           masApps = {
+            # When adding app for first time, it needs to be done trough MaS to link with account
+            # only then it can be managed through nix
             "Toggl Track: Hours & Time Log" = 1291898086;
             "Fresco" = 1251572132;
             "reMarkable" = 1276493162;
+            "Slack" = 803453959;
+            # "SuperProductivity" = 1482572463; # old version, troubles with sync, using DMG version
+            "Telegram" = 747648890;
           };
           onActivation = {
             cleanup = "zap";
