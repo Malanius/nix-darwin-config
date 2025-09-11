@@ -23,7 +23,7 @@
           # pkgs._1password-gui # complains it is not installed in Applications :(
           # pkgs.openvpn
           pkgs.pkg-config # FIXME: what needs this?
-          pkgs.raycast # can't use Mac without it, I know, skill issue 😒
+          # pkgs.raycast # can't use Mac without it, I know, skill issue 😒# nixpgs version is fairly behind, some plugins don't work with it, using brew version
           pkgs.speedtest-cli
 
           # Apps / Comms
@@ -162,6 +162,7 @@
             "insomnia" # Gui Insomina
             "inso" # CLI Insomnia
             "vesktop"
+            "raycast"
           ];
           masApps = {
             # When adding app for first time, it needs to be done trough MaS to link with account
