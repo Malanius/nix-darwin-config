@@ -155,6 +155,7 @@
             "openssl@3"
             #"tfenv"
             "xz"
+            "yt-dlp"
             "zlib"
             "zsh-completions"
           ];
