@@ -31,7 +31,7 @@
 
           # Apps / Media
           pkgs.mpv-unwrapped
-          pkgs.ffmpeg_8-full
+          #pkgs.ffmpeg_8-full # raycast plugins doesn't seem to see nix version
           #pkgs.spotify # broken MacOS build, using native version
 
           # Apps / CLI
@@ -152,6 +152,7 @@
             "docker-compose"
             "docker-credential-helper"
             "docker"
+            "ffmpeg"
             # "kreuzwerker/taps/m1-terraform-provider-helper"
             "openssl@3"
             #"tfenv"
