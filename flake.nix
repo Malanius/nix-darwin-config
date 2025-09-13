@@ -31,6 +31,7 @@
 
           # Apps / Media
           pkgs.mpv-unwrapped
+          pkgs.ffmpeg_8-full
           #pkgs.spotify # broken MacOS build, using native version
 
           # Apps / CLI
