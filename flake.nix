@@ -153,6 +153,7 @@
             "docker-credential-helper"
             "docker"
             "ffmpeg"
+            "mas"
             # "kreuzwerker/taps/m1-terraform-provider-helper"
             "openssl@3"
             #"tfenv"
