@@ -67,6 +67,7 @@
           pkgs.awscli2
           pkgs.awslogs
           pkgs.localstack
+          pkgs.aws-signing-helper
 
           # DEV / Databases
           pkgs.dbeaver-bin
