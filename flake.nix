@@ -104,8 +104,8 @@
 
           # DEV / Node
           pkgs.bun
-          pkgs.nodePackages_latest.pnpm
-          pkgs.yarn
+          pkgs.volta
+
 
           # DEV / Rust
           pkgs.rustup
