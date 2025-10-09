@@ -22,6 +22,7 @@
           pkgs._1password-cli # op for cli
           # pkgs._1password-gui # complains it is not installed in Applications :(
           # pkgs.openvpn
+          pkgs.localsend
           pkgs.pkg-config # FIXME: what needs this?
           # pkgs.raycast # can't use Mac without it, I know, skill issue 😒# nixpgs version is fairly behind, some plugins don't work with it, using brew version
           pkgs.speedtest-cli
