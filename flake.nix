@@ -63,6 +63,9 @@
           pkgs.topgrade # upgrade everything, https://github.com/topgrade-rs/topgrade
           pkgs.tre-command # better fster, tree, still can't properly sort, https://github.com/dduan/tre
           # pkgs.xcp # some of the dependent libs don't specify aarch64 as supported
+          pkgs.yazi
+          pkgs.python313Packages.sixel # required for yazi
+          pkgs.ghostty-bin
 
           # DEV / AWS
           pkgs.aws-vault
