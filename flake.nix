@@ -107,9 +107,6 @@
           # pkgs.krew
           # pkgs.kubernetes-helm
 
-          # DEV / Node
-          pkgs.bun
-
           # DEV / Rust
           pkgs.rustup
 
