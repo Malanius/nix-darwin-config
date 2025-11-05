@@ -142,7 +142,7 @@
           pkgs.tectonic # LaTeX engine, required by Pandoc for PDF output, https://tectonic-typesetting.github.io/en-US/
           pkgs.tokei # Count your code, quickly, https://github.com/XAMPPRocky/tokei
           pkgs.vscode # VSCode, https://code.visualstudio.com/
-          pkgs.wakatime # time tracking, https://wakatime.com/
+          pkgs.wakatime-cli # time tracking, https://wakatime.com/
         ];
 
         homebrew = {
