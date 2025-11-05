@@ -88,7 +88,7 @@
           pkgs.git-lfs
           pkgs.gitflow
           pkgs.gitkraken
-          pkgs.gk-cli
+          #pkgs.gk-cli
           pkgs.gnupg
           pkgs.lazygit
 
