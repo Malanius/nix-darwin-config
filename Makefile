@@ -4,7 +4,7 @@ update:
 	nix flake update
 
 switch:
-	sudo darwin-rebuild switch --flake .
+	sudo darwin-rebuild switch --flake .#macshit
 	rustup default stable
 	./cargo-bins.sh
 	mise use --global node@22
