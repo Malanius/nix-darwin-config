@@ -78,7 +78,7 @@
           pkgs.dbeaver-bin
           pkgs.postgresql_16
           pkgs.sq # Swiss army knife for data, https://sq.io/
-          pkgs.visidata
+          # pkgs.visidata # fails build on pyarrow
 
           # DEV / Git
           pkgs.difftastic
@@ -118,6 +118,9 @@
           pkgs.lazygit # used by AstroNvim
           pkgs.ripgrep  # used by AstroNvim
           pkgs.tree-sitter # used by AstroNvim
+
+          # DEV / Helix
+          pkgs.helix
 
           # DEV / Go
           pkgs.go
