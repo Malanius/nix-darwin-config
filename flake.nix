@@ -119,6 +119,12 @@
             # DEV / Rust
             pkgs.rustup
 
+            # DEV / Zed
+            # IDK why but between releases switched to full build instad of binary
+            # Takes ages to compile and fails on missing metal, even when available
+            # Rather use native DMG than this
+            #pkgs.zed-editor
+
             # DEV / Neovim
             pkgs.vim # fallback for neovim
             pkgs.neovim
@@ -191,6 +197,7 @@
               "Slack" = 803453959;
               # "SuperProductivity" = 1482572463; # old version, troubles with sync, using DMG version
               "Telegram" = 747648890;
+              #"XCode" = 497799835;
             };
             onActivation = {
               cleanup = "zap";
