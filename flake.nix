@@ -72,13 +72,13 @@
             pkgs.topgrade # upgrade everything, https://github.com/topgrade-rs/topgrade
             pkgs.tre-command # better fster, tree, still can't properly sort, https://github.com/dduan/tre
             # pkgs.xcp # some of the dependent libs don't specify aarch64 as supported
-            pkgs.yazi
+            pkgs.yazi # terminal file manager https://yazi-rs.github.io/
 
             # DEV / AWS
             pkgs.aws-vault
             pkgs.awscli2
             pkgs.awslogs
-            pkgs.localstack
+            # pkgs.localstack # fails on python build version check test
             pkgs.aws-signing-helper
 
             # DEV / Databases
