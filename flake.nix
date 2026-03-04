@@ -32,7 +32,7 @@
             # pkgs._1password-gui # complains it is not installed in Applications :(
             # pkgs.openvpn
             pkgs.localsend
-            pkgs.pkg-config # FIXME: what needs this?
+            pkgs.pkg-config
             # pkgs.raycast # can't use Mac without it, I know, skill issue 😒# nixpgs version is fairly behind, some plugins don't work with it, using brew version
             pkgs.speedtest-cli
             pkgs.firefox-unwrapped
@@ -46,7 +46,7 @@
             #pkgs.spotify # broken MacOS build, using native version
 
             # Apps / CLI
-            pkgs.alacritty # best terminal ever, https://alacritty.org/
+            pkgs.ghostty-bin # modern terminal emulator 
             pkgs.bat # better cat, https://github.com/sharkdp/bat
             pkgs.broot # fuzzy file navigator, https://github.com/Canop/broot
             pkgs.btop # resource monitor, https://github.com/aristocratos/btop
@@ -73,8 +73,6 @@
             pkgs.tre-command # better fster, tree, still can't properly sort, https://github.com/dduan/tre
             # pkgs.xcp # some of the dependent libs don't specify aarch64 as supported
             pkgs.yazi
-            pkgs.python313Packages.sixel # required for yazi
-            pkgs.ghostty-bin
 
             # DEV / AWS
             pkgs.aws-vault
