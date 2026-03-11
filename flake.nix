@@ -39,6 +39,7 @@
 
             # Apps / Comms
             pkgs.mailspring
+            pkgs.signal-desktop
 
             # Apps / Media
             pkgs.mpv-unwrapped
