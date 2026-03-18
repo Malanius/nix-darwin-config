@@ -156,6 +156,10 @@
             pkgs.tokei # Count your code, quickly, https://github.com/XAMPPRocky/tokei
             pkgs.vscode # VSCode, https://code.visualstudio.com/
             pkgs.wakatime-cli # time tracking, https://wakatime.com/
+
+            # DEV / AI
+            pkgs.llmfit
+            pkgs.ollama
           ];
 
           homebrew = {
