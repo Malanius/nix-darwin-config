@@ -160,6 +160,8 @@
             # DEV / AI
             pkgs.llmfit
             pkgs.ollama
+            pkgs.claude-code
+            pkgs.opencode
           ];
 
           homebrew = {
