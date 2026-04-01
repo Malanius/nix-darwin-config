@@ -190,6 +190,7 @@
             casks = [
               "insomnia" # Gui Insomina
               "inso" # CLI Insomnia
+              "krita"
               "vesktop"
               "raycast"
             ];
