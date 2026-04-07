@@ -162,6 +162,7 @@
             pkgs.ollama
             pkgs.claude-code
             pkgs.opencode
+            # pkgs.open-webui # fails on pg dependency disallowing aarch64-darwin
           ];
 
           homebrew = {
@@ -172,6 +173,7 @@
             ];
             brews = [
               "colima"
+              "qemu"
               # "derailed/k9s/k9s"
               "docker-buildx"
               "docker-compose"
