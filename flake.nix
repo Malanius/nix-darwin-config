@@ -203,7 +203,7 @@
               "Fresco" = 1251572132;
               "reMarkable" = 1276493162;
               "Slack" = 803453959;
-              # "SuperProductivity" = 1482572463; # old version, troubles with sync, using DMG version
+              "SuperProductivity" = 1482572463;
               "Telegram" = 747648890;
               #"XCode" = 497799835;
             };
