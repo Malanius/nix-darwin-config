@@ -8,6 +8,7 @@ switch:
 	rustup default stable
 	./cargo-bins.sh
 	mise use --global node@22
+	mise use --global bun@latest
 
 init-devtools:
 	-xcode-select --install
