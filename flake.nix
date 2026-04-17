@@ -315,8 +315,8 @@
             ldc = "lazydocker";
             lg = "lazygit";
             tf = "terraform";
-            projen = "npx projen";
-            pj = "npx projen";
+            projen = "bunx projen";
+            pj = "bunx projen";
           };
         };
     in
