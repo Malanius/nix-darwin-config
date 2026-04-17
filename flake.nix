@@ -99,6 +99,7 @@
             #pkgs.gk-cli
             pkgs.gnupg
             pkgs.lazygit
+            pkgs.cz-cli
 
             # DEV / Docker
             pkgs.lazydocker
