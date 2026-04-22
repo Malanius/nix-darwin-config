@@ -148,6 +148,7 @@
             # pkgs.jetbrains-toolbox # Older version, can't auto-update, using native
             pkgs.just # better make, https://github.com/casey/just
             pkgs.kondo # clean up space from inactive projects, https://github.com/tbillington/kondo
+            pkgs.mermaid-cli
             pkgs.mise # All-in-one tool to manage dev envs across languages, https://mise.jdx.dev
             pkgs.navi # interactive cheatsheet tool, https://github.com/denisidoro/navi
             pkgs.ngrok # secure introspectable tunnels to localhost, https://ngrok.com/
