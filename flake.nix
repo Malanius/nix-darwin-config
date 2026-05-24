@@ -208,7 +208,7 @@
               "Slack" = 803453959;
               "SuperProductivity" = 1482572463;
               "Telegram" = 747648890;
-              #"XCode" = 497799835;
+              "XCode" = 497799835;
             };
             onActivation = {
               cleanup = "zap";
