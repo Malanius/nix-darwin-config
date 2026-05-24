@@ -203,7 +203,7 @@
               # When adding app for first time, it needs to be done trough MaS to link with account
               # only then it can be managed through nix
               "Toggl Track: Hours & Time Log" = 1291898086;
-              "Fresco" = 1251572132;
+              # "Fresco" = 1251572132; #disappeared from store
               "reMarkable" = 1276493162;
               "Slack" = 803453959;
               "SuperProductivity" = 1482572463;
