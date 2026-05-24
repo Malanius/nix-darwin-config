@@ -174,6 +174,7 @@
               # "derailed/k9s"
             ];
             brews = [
+              "biome"
               "colima"
               "qemu"
               # "derailed/k9s/k9s"
