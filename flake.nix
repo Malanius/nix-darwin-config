@@ -233,6 +233,16 @@
           # Necessary for using flakes on this system.
           nix.settings.experimental-features = "nix-command flakes";
 
+          ## Automatic garbage colletion and previous generation cleanup
+          nix.gc = {
+            automatic = true;
+            interval = {
+              Hour = 2;
+              Minute = 0;
+            }; # Every day at 2am
+            options = "--delete-older-than 14d";
+          };
+
           # Create /etc/zshrc that loads the nix-darwin environment.
           programs.zsh.enable = true; # default shell on catalina
           programs.bash.enable = true;
