@@ -47,7 +47,7 @@
             #pkgs.spotify # broken MacOS build, using native version
 
             # Apps / CLI
-            pkgs.ghostty-bin # modern terminal emulator 
+            pkgs.ghostty-bin # modern terminal emulator
             pkgs.bat # better cat, https://github.com/sharkdp/bat
             pkgs.broot # fuzzy file navigator, https://github.com/Canop/broot
             pkgs.btop # resource monitor, https://github.com/aristocratos/btop
@@ -217,8 +217,10 @@
             };
           };
 
-          fonts.packages =
-            [ ] ++ builtins.filter nixpkgs.lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
+          fonts.packages = with pkgs; [
+            nerd-fonts.fira-code
+            nerd-fonts.jetbrains-mono
+          ];
 
           #services.skhd = {
           #	enable = true;
