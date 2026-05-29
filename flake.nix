@@ -172,6 +172,7 @@
             enable = true;
             taps = [
               # "derailed/k9s"
+              "peteonrails/voxtype"
             ];
             brews = [
               "biome"
@@ -198,6 +199,7 @@
               "krita"
               "vesktop"
               "raycast"
+              "voxtype"
             ];
             masApps = {
               # When adding app for first time, it needs to be done trough MaS to link with account
