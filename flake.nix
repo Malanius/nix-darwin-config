@@ -32,6 +32,7 @@
             # pkgs._1password-gui # complains it is not installed in Applications :(
             # pkgs.openvpn
             pkgs.localsend
+            pkgs.obsidian
             pkgs.pkg-config
             # pkgs.raycast # can't use Mac without it, I know, skill issue 😒# nixpgs version is fairly behind, some plugins don't work with it, using brew version
             pkgs.speedtest-cli
