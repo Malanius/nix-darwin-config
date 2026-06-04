@@ -91,6 +91,7 @@
 
             # DEV / Git
             pkgs.difftastic
+            pkgs.delta
             pkgs.gh # GitHub CLI, https://cli.github.com/
             pkgs.git
             pkgs.git-cliff # changelog generator, https://github.com/orhun/git-cliff
