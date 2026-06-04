@@ -108,7 +108,7 @@
 
             # DEV / Python
             pkgs.graphviz # used by diagrams-py
-            pkgs.pipx
+            # pkgs.pipx # currenly broken tests - https://github.com/NixOS/nixpkgs/issues/522307
             # pkgs.poetry # act's wonky when isntalled from nix, surpassed by UV anyways
             pkgs.pyenv
             pkgs.uv
