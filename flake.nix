@@ -66,7 +66,7 @@
             pkgs.ripgrep # superfast grep, https://github.com/BurntSushi/ripgrep
             pkgs.rnr # rename files with regex, https://github.com/ismaelgv/rnr
             pkgs.sd # sed but better, https://github.com/chmln/sd
-            pkgs.silver-searcher # ag, Code-searching tool similar to ack, but faster, https://github.com/ggreer/the_silver_searcher/
+            #pkgs.silver-searcher # ag, Code-searching tool similar to ack, but faster, https://github.com/ggreer/the_silver_searcher/
             pkgs.starship # the only shell prompt you'll ever need, https://starship.rs/
             pkgs.tealdeer # fast, rust-based tldr client, https://github.com/tealdeer-rs/tealdeer
             # pkgs.thefuck # no longer maintained and disappeared from nixpkgs
