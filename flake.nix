@@ -340,6 +340,7 @@
             tf = "terraform";
             projen = "bunx projen";
             pj = "bunx projen";
+            obc = "git add .; git commit -a -m $(date -Iseconds)";
           };
         };
     in
