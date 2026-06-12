@@ -162,11 +162,12 @@
             pkgs.wakatime-cli # time tracking, https://wakatime.com/
 
             # DEV / AI
+            pkgs.codex
             pkgs.llmfit
             pkgs.ollama
             pkgs.claude-code
             pkgs.opencode
-            # pkgs.open-webui # fails on pg dependency disallowing aarch64-darwin
+            pkgs.pi-coding-agent
           ];
 
           homebrew = {
@@ -196,6 +197,7 @@
               "zsh-completions"
             ];
             casks = [
+              "copilot-cli"
               "insomnia" # Gui Insomina
               "inso" # CLI Insomnia
               "krita"
