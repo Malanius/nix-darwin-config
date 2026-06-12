@@ -203,7 +203,7 @@
               "krita"
               "vesktop"
               "raycast"
-              "voxtype"
+              # "voxtype" # untrusted tap, waiting for nix-darwin update to set as trusted, https://github.com/nix-darwin/nix-darwin/issues/1794
             ];
             masApps = {
               # When adding app for first time, it needs to be done trough MaS to link with account
