@@ -208,6 +208,7 @@
             masApps = {
               # When adding app for first time, it needs to be done trough MaS to link with account
               # only then it can be managed through nix
+              "iWallpaper" = 1552826194;
               "Toggl Track: Hours & Time Log" = 1291898086;
               # "Fresco" = 1251572132; #disappeared from store
               "reMarkable" = 1276493162;
