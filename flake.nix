@@ -151,7 +151,7 @@
             pkgs.just # better make, https://github.com/casey/just
             pkgs.kondo # clean up space from inactive projects, https://github.com/tbillington/kondo
             pkgs.mermaid-cli
-            pkgs.mise # All-in-one tool to manage dev envs across languages, https://mise.jdx.dev
+            # pkgs.mise # All-in-one tool to manage dev envs across languages, https://mise.jdx.dev
             pkgs.navi # interactive cheatsheet tool, https://github.com/denisidoro/navi
             pkgs.ngrok # secure introspectable tunnels to localhost, https://ngrok.com/
             pkgs.nixfmt # Nix files formatter, required by VSCode extension
@@ -188,6 +188,7 @@
               "docker"
               "ffmpeg"
               "mas"
+              "mise" # All-in-one tool to manage dev envs across languages, https://mise.jdx.dev
               # "kreuzwerker/taps/m1-terraform-provider-helper"
               "openssl@3"
               #"tfenv"
