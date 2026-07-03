@@ -187,6 +187,7 @@
               "docker-credential-helper"
               "docker"
               "ffmpeg"
+              "jj"
               "mas"
               "mise" # All-in-one tool to manage dev envs across languages, https://mise.jdx.dev
               # "kreuzwerker/taps/m1-terraform-provider-helper"
