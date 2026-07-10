@@ -7,6 +7,5 @@ espflash
 ldproxy
 
 # Doesn't have Nix package
-tod
 # Nix build is missing aarch64 compatibility
 xcp
