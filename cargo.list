@@ -2,7 +2,7 @@
 cargo-generate --features vendored-openssl
 cargo-pio
 cargo-update --features vendored-openssl
-dioxus-cli
+dioxus-cli --locked
 espflash
 ldproxy
 
