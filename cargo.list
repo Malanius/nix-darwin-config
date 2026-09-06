@@ -1,5 +1,5 @@
 # DEV related tooling I would rather install by cargo than Nixpkgs
-cargo-generate --features vendored-openssl
+cargo-generate
 cargo-pio
 cargo-update --features vendored-openssl
 dioxus-cli --locked
