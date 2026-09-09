@@ -37,6 +37,7 @@
             # pkgs.raycast # can't use Mac without it, I know, skill issue 😒# nixpgs version is fairly behind, some plugins don't work with it, using brew version
             pkgs.speedtest-cli
             pkgs.firefox-unwrapped
+            pkgs.restic
 
             # Apps / Comms
             pkgs.mailspring
