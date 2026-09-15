@@ -264,7 +264,10 @@
           programs.bash.enable = true;
           programs.bash.completion.enable = true;
           # programs.fish.enable = true;
-          programs.tmux.enable = true;
+          programs.tmux = {
+            enable = true;
+            extraConfig = builtins.readFile ./dotfiles/tmux.conf;
+          };
           programs.direnv.enable = true;
           # Set Git commit hash for darwin-version.
           system.configurationRevision = self.rev or self.dirtyRev or null;
