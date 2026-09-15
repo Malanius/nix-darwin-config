@@ -188,6 +188,7 @@
               "docker-credential-helper"
               "docker"
               "ffmpeg"
+              "herdr"
               "jj"
               "mas"
               "mise" # All-in-one tool to manage dev envs across languages, https://mise.jdx.dev
